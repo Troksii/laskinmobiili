@@ -49,15 +49,17 @@ export default function App() {
               style={styles.input} 
               keyboardType= 'numeric'
               onChangeText={userInput1}
-              value={input1}/>
+              value={input1}
+              />
       <TextInput 
               style={styles.input} 
               keyboardType= 'numeric'
               onChangeText={userInput2}
-              value={input2}/>
+              value={input2}
+              />
       <View style={{flexDirection: 'row', alignItems: 'center'}}>
-      <Button onPress={buttonPressed1} title="+" />
-      <Button onPress={buttonPressed2} title="-" />
+      <Button onPress={buttonPressed1} title="plus" />
+      <Button onPress={buttonPressed2} title="minus" />
       </View>
       <StatusBar style="auto" />
     </View>
@@ -67,13 +69,13 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: 'pink',
+    backgroundColor: 'blue',
     alignItems: 'center',
     justifyContent: 'center',
   },
   input : {
     width:200  , 
-    borderColor: 'gray', 
+    borderColor: 'black', 
     borderWidth: 1,
     backgroundColor: 'white',
   }
